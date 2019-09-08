@@ -1,0 +1,25 @@
+<view class="list-container">
+<view class="weui-cells__title" wx:if="{{!showDone}}">Todo List</view>
+<view class="weui-cells__title reset" bindtap="resetDone" wx:if="{{showDone}}">Complete List Touch Here Would Reset</view>
+<view class="weui-cells weui-cells_checkbox weui-cells_after-title">
+    <checkbox-group bindchange="checkboxChange">
+        <label class="weui-cell weui-check__label" wx:for="{{todo}}" wx:if="{{item.done==showDone}}" wx:key="value">
+          <view class="weui-cell__bd overflow-word">{{item.message}}</view>
+            <checkbox class="weui-check" value="{{index}}" checked="{{item.done}}"/>
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.done}}"></icon>
+                <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.done}}"></icon>
+            </view>
+            
+        </label>
+    </checkbox-group>
+  <view class="weui-cell weui-cell_link" wx:if="{{!showDone}}">
+    Add New
+    <input bindblur="handleBlur" value="{{resetData}}" class="todo-input" placeholder="input todo" confirm-type="done"/>
+  </view>
+</view>
+</view>
+<view class="weui-cells__tab">
+  <view class="{{changedColor}}" bindtap="changeShow">Todo</view>
+  <view class="{{changeColor}}" bindtap="changeShow">Complete</view>
+</view>

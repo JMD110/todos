@@ -1,0 +1,86 @@
+/**index.wxss**/
+.list-container{
+  position: absolute;
+  top:0;
+  right: 0;
+  padding-bottom: 50px;
+  /* margin-bottom: 50px; */
+  left: 0;
+}
+.weui-cells__tab {
+  position:fixed;
+  line-height: 50px;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  width: 100%;
+  color: rgba(0,0,0,.5);
+  font-size: 18px;
+}
+.weui-cells__title{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: rgba(0,0,0,.5);
+  font-size: 14px;
+
+}
+.change-show{
+  width: 50%;
+  text-align: center;
+  color: #7f8389;
+  background-color:#f7f7fa; 
+  float: left
+}
+.changed-show{
+  width: 50%;
+  text-align: center;
+  color: #00a8f3;
+  background-color:#f7f7fa; 
+  float: left
+}
+.add-todo{
+  background-color: #ccf2ff;
+  color: #fff;
+}
+.todo-item{
+  color: #00a8f3;
+  background-color: #f7f7fa;
+}
+.done {
+  color: #00a8f3;
+  background-color: #f7f7fa;
+  text-align:right;
+  margin-right: 5px;
+}
+.navigator-container{
+  position: relative;
+  bottom: -10px;
+}
+.add-new{
+  width: 50%;
+  text-align: center;
+  color: #00a8f3;
+  float: left
+}
+.have-done{
+  width: 50%;
+  text-align: center;
+  color: #00a8f3;
+  float: left
+}
+.todo-input{
+  position: relative;
+  left: 8px;
+}
+/* 实现换行 */
+.overflow-word{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: true;
+  flex-flow: row wrap;
+  align-content: space-around;
+}
