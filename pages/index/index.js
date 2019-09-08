@@ -3,6 +3,8 @@
 const app = getApp()
 Page({
   data: {
+    doneNum: 0,
+    target: false,
     changeColor: "change-show",
     changedColor: "changed-show",
     addMore: false,
@@ -79,7 +81,9 @@ Page({
         done: true
       }
       this.setData({
-        todo: newList
+        todo: newList,
+        doneNum: this.data.doneNum+1,
+        target:true
       })
     }
   },
@@ -90,7 +94,9 @@ Page({
     this.setData({
       changeColor:change,
       changedColor:color,
-      showDone: !this.data.showDone
+      showDone: !this.data.showDone,
+      doneNum: 0,
+      target: false
     })
   },
   // 清空已完成数据 

@@ -84,3 +84,19 @@
   flex-flow: row wrap;
   align-content: space-around;
 }
+.red-target {
+  position: absolute;
+  right: 30px;
+  bottom: 30px; 
+  /* left: 90%;
+  top: 90%; */
+  border-radius: 50%;      
+  -moz-border-radius: 50%;      
+  -webkit-border-radius: 50%;
+  background: #ff3333;
+  width: 20px;
+  height: 20px; 
+  text-align: center;
+  font-size: 13.5px;
+  color: white;
+}

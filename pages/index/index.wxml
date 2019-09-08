@@ -21,5 +21,7 @@
 </view>
 <view class="weui-cells__tab">
   <view class="{{changedColor}}" bindtap="changeShow">Todo</view>
-  <view class="{{changeColor}}" bindtap="changeShow">Complete</view>
+  <view class="{{changeColor}}" bindtap="changeShow">Complete
+  </view>
 </view>
+<view class="red-target"wx:if="{{target}}">{{doneNum}}</view>
