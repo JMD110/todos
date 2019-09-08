@@ -74,6 +74,7 @@
 .todo-input{
   position: relative;
   left: 8px;
+  color: #7f8389;
 }
 /* 实现换行 */
 .overflow-word{
