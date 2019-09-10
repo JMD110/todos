@@ -1,6 +1,6 @@
 # todos
 - 一个简易的微信小程序</br>
-![trial](doc/img/trial.png)
+![trial](doc/img/trial.png)</br>
 ![todo](doc/img/todo.jpg)
 ![complete](doc/img/complete.jpg)
 
